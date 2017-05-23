@@ -25,7 +25,7 @@ import android.view.WindowManager;
 import com.demo.test.library.widget.DrawableResource;
 import com.demo.test.library.widget.scale_viewpager.ScalePagerAdapter;
 import com.demo.test.library.widget.scale_viewpager.ScaleViewPager;
-import com.test.demo.InsertImagePath;
+import com.test.demo.ScanImagePath;
 import com.test.demo.R;
 
 import java.util.ArrayList;
@@ -34,8 +34,6 @@ import java.util.List;
 public class ViewPagerActivity extends Activity {
     private static List<DrawableResource> mListPhoto;
     private static int mPosition;
-    String selection = MediaStore.Images.Media.MIME_TYPE + "=? or "
-            + MediaStore.Images.Media.MIME_TYPE + "=?";//只查询jpeg和png的图片
     String[] selectionArgs = new String[]{"image/jpeg", "image/png"};
 
 
@@ -75,13 +73,18 @@ public class ViewPagerActivity extends Activity {
 
     private List<DrawableResource> getData() {
         if (mListPhoto.size() == 0) {
-            return InsertImagePath.getInstance().getImagesPath(ViewPagerActivity.this, getImageUri(), selection, selectionArgs);
+            return ScanImagePath.getInstance().getImagesPath(ViewPagerActivity.this, getImageUri(), getSelection(), selectionArgs);
         }
         return mListPhoto;
     }
 
     private Uri getImageUri() {
         return MediaStore.Images.Media.EXTERNAL_CONTENT_URI;
+    }
+
+    private String getSelection(){
+        return MediaStore.Images.Media.MIME_TYPE + "=? or "
+                + MediaStore.Images.Media.MIME_TYPE + "=?";
     }
 
 

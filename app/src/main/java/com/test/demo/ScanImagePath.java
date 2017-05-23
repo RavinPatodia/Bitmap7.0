@@ -14,13 +14,13 @@ import java.util.List;
  * 查询图片在相册的路径
  */
 
-public class InsertImagePath {
-    private static InsertImagePath mInstance = new InsertImagePath();
+public class ScanImagePath {
+    private static ScanImagePath mInstance = new ScanImagePath();
 
-    private InsertImagePath() {
+    private ScanImagePath() {
     }
 
-    public static InsertImagePath getInstance() {
+    public static ScanImagePath getInstance() {
         return mInstance;
     }
 

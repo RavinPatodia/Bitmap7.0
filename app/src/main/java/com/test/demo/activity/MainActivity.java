@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
         if (ContextCompat.checkSelfPermission(this, permissions[0]) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, permissions, 1);
         } else {
-
+            Toast.makeText(this, "You have requested the permission", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
         switch (requestCode) {
             case 1:
                 if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                    Toast.makeText(this, "You agree the permission", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "You request the permission", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(this, "You denied the permission", Toast.LENGTH_SHORT).show();
                 }
