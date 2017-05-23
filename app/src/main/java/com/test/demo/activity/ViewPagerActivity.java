@@ -15,18 +15,12 @@
  *******************************************************************************/
 package com.test.demo.activity;
 
-import android.Manifest;
 import android.app.Activity;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.support.annotation.NonNull;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
 import android.view.WindowManager;
-import android.widget.Toast;
 
 import com.demo.test.library.widget.DrawableResource;
 import com.demo.test.library.widget.scale_viewpager.ScalePagerAdapter;
@@ -67,7 +61,6 @@ public class ViewPagerActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_pager);
-        requestPermission();
         initViews();
 
     }
@@ -91,27 +84,5 @@ public class ViewPagerActivity extends Activity {
         return MediaStore.Images.Media.EXTERNAL_CONTENT_URI;
     }
 
-    String[] permissions = {Manifest.permission.WRITE_EXTERNAL_STORAGE};
 
-    private void requestPermission() {
-        if (ContextCompat.checkSelfPermission(this, permissions[0]) != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(this, permissions, 1);
-        } else {
-
-        }
-    }
-
-    @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        switch (requestCode) {
-            case 1:
-                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                    Toast.makeText(this, "You agree the permission", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(this, "You denied the permission", Toast.LENGTH_SHORT).show();
-                }
-                break;
-        }
-    }
 }
