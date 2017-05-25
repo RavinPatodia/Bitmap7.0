@@ -6,7 +6,7 @@ import com.test.demo.ImageLoader;
 import com.test.demo.widget.DrawableResource;
 
 /**
- * Created by mac on 2017/5/25.
+ *
  */
 
 public class ImageUtil {

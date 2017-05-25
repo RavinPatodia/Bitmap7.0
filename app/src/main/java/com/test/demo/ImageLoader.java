@@ -43,7 +43,6 @@ public class ImageLoader {
 
             @Override
             public void run() {
-                //先获取图片的缩略图
                 Bitmap mBitmap = BitmapUtils.getBitmapFromFile(path);
                 Message msg = mHander.obtainMessage();
                 msg.obj = mBitmap;

@@ -16,7 +16,6 @@ public class BitmapUtils {
 
 
     public static Bitmap zoomImg(String img, int newWidth, int newHeight) {
-        // 图片源
         Bitmap bmp = getBitmapFromFile(img);
         if (null != bmp) {
             return zoomBitmap(bmp, newWidth, newHeight);
