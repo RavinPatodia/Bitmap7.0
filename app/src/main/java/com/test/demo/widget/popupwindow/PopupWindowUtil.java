@@ -1,4 +1,4 @@
-package com.demo.test.library.widget.popupwindow;
+package com.test.demo.widget.popupwindow;
 
 import android.animation.Animator;
 import android.animation.AnimatorSet;

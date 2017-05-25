@@ -1,12 +1,11 @@
-package com.demo.test.library.widget.scale_viewpager.adapter;
+package com.test.demo.widget.scale_viewpager.adapter;
 
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.demo.test.library.util.GlideUtil;
-import com.demo.test.library.util.ImageUtil;
-import com.demo.test.library.widget.DrawableResource;
-import com.demo.test.library.widget.scale_viewpager.listener.OnShowTitleBarListener;
+import com.test.demo.util.GlideUtil;
+import com.test.demo.widget.DrawableResource;
+import com.test.demo.widget.scale_viewpager.listener.OnShowTitleBarListener;
 
 import java.util.List;
 

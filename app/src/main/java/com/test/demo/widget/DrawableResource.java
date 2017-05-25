@@ -1,4 +1,4 @@
-package com.demo.test.library.widget;
+package com.test.demo.widget;
 
 import android.net.Uri;
 

@@ -1,10 +1,10 @@
-package com.demo.test.library.widget.scale_viewpager.viewpager;
+package com.test.demo.widget.scale_viewpager.viewpager;
 
 import android.content.Context;
 import android.util.AttributeSet;
 
-import com.demo.test.library.widget.scale_viewpager.ScalePageTransformer;
-import com.demo.test.library.widget.scale_viewpager.listener.ScalePagerListener;
+import com.test.demo.widget.scale_viewpager.ScalePageTransformer;
+import com.test.demo.widget.scale_viewpager.listener.ScalePagerListener;
 
 /**
  * Created by WuLe

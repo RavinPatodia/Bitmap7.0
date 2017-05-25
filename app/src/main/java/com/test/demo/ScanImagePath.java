@@ -1,11 +1,11 @@
-package com.demo.test.library;
+package com.test.demo;
 
 import android.app.Activity;
 import android.database.Cursor;
 import android.net.Uri;
 import android.provider.MediaStore;
 
-import com.demo.test.library.widget.DrawableResource;
+import com.test.demo.widget.DrawableResource;
 
 import java.util.ArrayList;
 import java.util.List;

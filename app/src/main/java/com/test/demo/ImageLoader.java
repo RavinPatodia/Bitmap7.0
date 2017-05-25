@@ -1,4 +1,4 @@
-package com.demo.test.library;
+package com.test.demo;
 
 import android.graphics.Bitmap;
 import android.os.Handler;
@@ -6,7 +6,7 @@ import android.os.Message;
 import android.util.Log;
 import android.widget.ImageView;
 
-import com.demo.test.library.util.BitmapUtils;
+import com.test.demo.util.BitmapUtils;
 
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;

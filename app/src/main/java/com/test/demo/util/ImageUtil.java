@@ -1,9 +1,9 @@
-package com.demo.test.library.util;
+package com.test.demo.util;
 
 import android.widget.ImageView;
 
-import com.demo.test.library.ImageLoader;
-import com.demo.test.library.widget.DrawableResource;
+import com.test.demo.ImageLoader;
+import com.test.demo.widget.DrawableResource;
 
 /**
  * Created by mac on 2017/5/25.

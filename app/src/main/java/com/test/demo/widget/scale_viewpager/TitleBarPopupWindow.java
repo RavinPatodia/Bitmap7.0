@@ -1,4 +1,4 @@
-package com.demo.test.library.widget.scale_viewpager;
+package com.test.demo.widget.scale_viewpager;
 
 import android.content.Context;
 import android.graphics.drawable.ColorDrawable;
@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.PopupWindow;
 
-import com.demo.test.library.R;
+import com.test.demo.R;
 
 
 /**

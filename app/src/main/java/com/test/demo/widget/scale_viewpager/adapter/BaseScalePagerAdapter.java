@@ -1,10 +1,10 @@
-package com.demo.test.library.widget.scale_viewpager.adapter;
+package com.test.demo.widget.scale_viewpager.adapter;
 
 import android.support.v4.view.PagerAdapter;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.demo.test.library.widget.DrawableResource;
+import com.test.demo.widget.DrawableResource;
 
 import java.util.List;
 

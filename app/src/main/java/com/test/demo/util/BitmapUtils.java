@@ -1,4 +1,4 @@
-package com.demo.test.library.util;
+package com.test.demo.util;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;

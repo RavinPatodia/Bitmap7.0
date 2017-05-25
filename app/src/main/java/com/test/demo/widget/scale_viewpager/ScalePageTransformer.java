@@ -1,4 +1,4 @@
-package com.demo.test.library.widget.scale_viewpager;
+package com.test.demo.widget.scale_viewpager;
 
 import android.support.v4.view.ViewPager;
 import android.view.View;

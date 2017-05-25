@@ -1,10 +1,10 @@
-package com.demo.test.library.util;
+package com.test.demo.util;
 
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
-import com.demo.test.library.widget.DrawableResource;
+import com.test.demo.widget.DrawableResource;
 
 /**
  *
