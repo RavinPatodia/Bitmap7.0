@@ -1,6 +1,8 @@
-package com.demo.test.library.widget.scale_viewpager;
+package com.demo.test.library.widget.scale_viewpager.listener;
 
 import android.view.View;
+
+import com.demo.test.library.widget.scale_viewpager.TitleBarPopupWindow;
 
 import uk.co.senab.photoview.PhotoViewAttacher;
 

@@ -1,4 +1,4 @@
-package com.demo.test.library.widget.scale_viewpager;
+package com.demo.test.library.widget.scale_viewpager.event;
 
 /**
  * Created by WuLe
