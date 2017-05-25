@@ -1,10 +1,12 @@
-package com.test.demo;
+package com.demo.test.library;
 
 import android.graphics.Bitmap;
 import android.os.Handler;
 import android.os.Message;
+import android.util.Log;
+import android.widget.ImageView;
 
-import com.test.demo.util.BitmapUtils;
+import com.demo.test.library.util.BitmapUtils;
 
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
@@ -51,6 +53,14 @@ public class ImageLoader {
         });
 
 
+    }
+
+    public void loadNativeImage(String path, ImageView imageView) {
+        Bitmap bitmap = BitmapUtils.getBitmapFromFile(path);
+        if (bitmap == null) {
+            Log.e("Error", "获取图片失败");
+        }
+        imageView.setImageBitmap(bitmap);
     }
 
 

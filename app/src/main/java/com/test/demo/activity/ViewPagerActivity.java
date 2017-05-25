@@ -22,10 +22,11 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.WindowManager;
 
+import com.demo.test.library.ScanImagePath;
 import com.demo.test.library.widget.DrawableResource;
+import com.demo.test.library.widget.scale_viewpager.adapter.BaseScalePagerAdapter;
 import com.demo.test.library.widget.scale_viewpager.adapter.ScalePagerAdapter;
 import com.demo.test.library.widget.scale_viewpager.viewpager.ScaleViewPager;
-import com.test.demo.ScanImagePath;
 import com.test.demo.R;
 
 import java.util.ArrayList;
@@ -53,7 +54,7 @@ public class ViewPagerActivity extends Activity {
 
 
     private ScaleViewPager mViewPager;
-    private ScalePagerAdapter mPagerAdapter;
+    private BaseScalePagerAdapter mPagerAdapter;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

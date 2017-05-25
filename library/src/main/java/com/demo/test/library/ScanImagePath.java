@@ -1,4 +1,4 @@
-package com.test.demo;
+package com.demo.test.library;
 
 import android.app.Activity;
 import android.database.Cursor;
